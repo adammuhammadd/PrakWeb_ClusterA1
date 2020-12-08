@@ -1,0 +1,20 @@
+{
+    "name": {
+        "first": "Muhammad",
+        "last": "Adam"
+    },
+    "gender": "Laki-laki",
+    "saudara": {
+        "first": "Muhammad",
+        "second": "Fadhilsyah"
+    },
+    "orangtua": {
+        "ayah": "Muhammad Febriyansyah",
+        "ibu": "Devie Wahyuni"
+    },
+    "hobby": ["Mengaji", "Belajar"],
+    "alamat": "Sukarame, Bandar Lampung",
+    "social_media": {
+        "instagram": "instagram.com/adam.muhammadd"
+    }
+}

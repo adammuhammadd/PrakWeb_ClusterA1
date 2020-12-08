@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        div {
+            padding: 20px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="id1">Ini div#id1</div> 
+        <section class="sama">Section class sama </section>
+        <div class="sama">Div class sama ke-2</div>
+
+        <!-- Kembalian dalam bentuk HTMLCollection -->
+        <!-- Memilih hanya satu node dengan ID -->
+        <button onclick="return ubah(document.getElementById('id1'), 'teal')">Ubah Background div#id1 dengan getElementById</button><br>
+
+        <!-- Memilih semua node yang sesuai nama class-nya -->
+        <button onclick="return ubah(document.getElementsByClassName('sama'), 'aqua')">Ubah Background class sama dengan getElementsByClassName</button><br>
+        
+        <!-- Memilih semua node target sesuai dengan tagName -->
+        <button onclick="return ubah(document.getElementsByTagName('section'), 'pink')">Ubah Background section dengan getElementsByTagName</button><br>
+        
+
+        <!-- Kembalian dalam bentuk NodeList -->
+        <!-- Hanya memilih node target yang pertama  -->
+        <button onclick="return ubah(document.querySelector('div'), 'red')">Ubah Background div dengan querySelector</button><br> 
+        
+        <!-- Memilih semua node target, umumnya yang dipilih bisa lebih dari 1 (tag, class, bisa juga id) -->
+        <button onclick="return ubah(document.querySelectorAll('div'), 'green')">Ubah Background div dengan querySelectorAll</button><br>
+    </main>
+
+    <script>
+        function ubah(element, color) {
+            elementLength = element.length;
+            if (elementLength) {
+                for (let i = 0; i < elementLength; i++) {
+                    element[i].style.backgroundColor = color;
+                }
+                return;
+            }
+
+            element.style.backgroundColor = color;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <name>
+    <first>Muhammad</first>
+    <last>Najie</last>
+  </name>
+  <gender>Laki-laki</gender>
+  <saudara>
+    <first>Muhammad</first>
+    <second>Fadhilsyah</second>
+  </saudara>
+  <orangtua>
+    <ayah>Muhammad Febriyansyah</ayah>
+    <ibu>Devie Wahyuni</ibu>
+  </orangtua>
+  <hobby>Mengaji</hobby>
+  <hobby>Belajar</hobby>
+  <alamat>Sukarame, Bandar Lampung</alamat>
+  <social_media>
+    <linkedin>instagram.com/adam.muhammadd</linkedin>
+  </social_media>
+</root>
